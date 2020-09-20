@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ne">
+        <button onclick="unhide()"></a><span style="font-size: 50px;">I'm not okay :(</span></button>
+    </div>
+    <head>
+        <style>
+            .exp {
+                visibility: hidden;
+                text-align: center;
+            }
+            .ne button{
+                background-color: whitesmoke;
+                  border-radius: 25px;
+  border: 2px solid white;
+  padding: 20px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="exp">
+            <p class="and" style="font-size: 70px">No, Youre alright; Put a big smile on your face, you're did great! Have a nice day...</p>
+            <a href="https://youtube.com/watch?v=dQw4w9WgXcQ&list=PL26bPmeFQvU4BFJ4IWkdZ5JUmFrZU3SNx&index=457"><img src="sponsor.png" alt=""></a>
+        </div>
+    </body>
+    <script>
+        function unhide() {
+                var hid = document.getElementsByClassName("exp");
+                // Emulates jQuery $(element).is(':hidden');
+                if (hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+                    hid[0].style.visibility = "visible";
+                }
+            }
+    </script>
+</body>
+</html>
